@@ -12,8 +12,11 @@
     <title>chat</title>
 </head>
 <body>
-    <input type="text" id="chat-input">
-    <button onclick="send()">отправить</button>
+    <form action="server/send.php" method='POST'>
+        <input type="text" id="chat-input" name='mess'>
+        <input type="submit">
+    </form>
+    
     <div id="result">
 
     </div>
